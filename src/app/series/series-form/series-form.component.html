@@ -1,0 +1,14 @@
+<form [formGroup]="formulario">
+  <div class="form-row" style="margin-top: 30px;">
+    <div class="col-md-12 mb-12">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control is-valid" 
+          id="nome" placeholder="Digite o nome da Série" formControlName="nome" />      
+    </div>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <button type="submit" class="btn btn-primary" (click)="adicionarSerie()">Salva</button>  
+    <button type="button" class="btn btn-default">Cancelar</button> 
+  </div>
+</form>

@@ -1,0 +1,45 @@
+<form [formGroup]="formulario" >
+  <div class="form-row" style="margin-top: 30px;">
+    <div class="col-md-4 mb-3">
+      <label for="nome">Nome do Produto</label>
+      <input type="text" class="form-control is-valid" 
+          id="name"placeholder="Nome do Produto" formControlName="name" />      
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <label for="price">Preço</label>
+        <input type="text" class="form-control is-valid" 
+          id="price" placeholder="Preço do Produto" formControlName="price" />      
+    </div>
+    <div class="col-md-4 mb-3">
+        <label for="description">Descrição</label>
+        <input type="text" class="form-control is-valid" id="description" 
+        placeholder="Descrição do Produto" formControlName="description" />      
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <label for="category_id">Categoria</label>
+        <input type="number" class="form-control is-valid" id="category_id" 
+        placeholder="Categoria do Produto" formControlName="category_id" />      
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="category_name">Nome da Categoria</label>
+      <input type="text" class="form-control is-valid" id="category_name" 
+      placeholder="Data do Produto" formControlName="category_name" />      
+  </div>
+
+    <div class="col-md-4 mb-3">
+        <label for="created">Data</label>
+        <input type="text" class="form-control is-valid" id="created" 
+        placeholder="Data do Produto" formControlName="created" />      
+    </div>
+
+    
+  </div>
+
+  <div style="margin-top: 10px;">
+    <button type="submit" class="btn btn-primary" (click)="adicionarProduto()">Salva</button>  
+    <button type="button" class="btn btn-default" (click)="onCancel()">Cancelar</button> 
+  </div>
+</form>
